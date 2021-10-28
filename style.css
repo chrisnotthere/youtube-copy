@@ -1,12 +1,109 @@
-h1 {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+  --light-grey: #212121;
+  --lighter-grey: #383737;
+  --lightest-grey: #7e7e7e;
+
+  --dark-grey: #181818;
+
+  --signin-blue: #3ea6ff;
+}
+
+input {
+  all: unset;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  height: 4em;
+  background-color: var(--light-grey);
 }
 
 main {
   padding: 1em;
+  background-color: var(--dark-grey);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.main-vid {
+  background-color: yellow;
+  height: 10em;
+}
+
+.comments {
+  background-color: blue;
+  height: 10em;
+}
+
+.suggested-vids {
+  background-color: orange;
+  height: 100vh;
+}
+
+.btn {
+  border: 0;
+  border-radius: 0.25rem;
+  background: none;
+  color: white;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+.home-btn {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  margin-left: 0.25em;
+}
+
+.header-middle {
+  display: flex;
+  padding: 0.5em 0 0.5em;
+}
+
+.magnify-btn {
+  background-color: var(--lighter-grey);
+  height: 3em;
+  margin-top: -0.01em;
+}
+
+.searchbar {
+  background-color: black;
+  padding: 1em;
+  color: var(--lightest-grey);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.signin-btn {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--signin-blue);
+  color: var(--signin-blue);
+}
+
+.signin-btn h1 {
+  font-size: 0.9em;
+  font-family: 'Roboto', sans-serif;
 }
