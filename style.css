@@ -39,8 +39,6 @@ main {
 }
 
 .main-vid {
-  /* background-color: yellow; */
-  /* height: 30em; */
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -55,7 +53,24 @@ main {
 }
 
 .main-vid-details {
-  background-color: yellow;
+  color: var(--lightest-grey);
+}
+
+.main-vid-details h1 {
+  color: whitesmoke;
+}
+
+.main-vid-details-lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-icons button {
+  display: inline-flex;
+}
+
+.details-icons img {
+  margin-right: 0.5em;
 }
 
 .comments {
@@ -64,7 +79,6 @@ main {
 }
 
 .suggested-vids {
-  /* background-color: orange; */
   height: 100vh;
   margin-left: 2em;
 }
@@ -137,7 +151,6 @@ header h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: antiquewhite; */
 }
 
 .up-next h2 {
@@ -148,7 +161,6 @@ header h1 {
 
 .up-next span {
   color: var(--lightest-grey);
-  /* margin-right: 0.5em; */
 }
 
 .switch {
@@ -199,7 +211,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
@@ -210,7 +221,6 @@ input:checked + .slider:before {
 
 .line-break {
   background-color: var(--lighter-grey);
-  /* background-color: red; */
   height: 1px;
   border: 0;
   margin-bottom: 1em;
@@ -239,11 +249,9 @@ input:checked + .slider:before {
 
 .thumbnail-info {
   margin: -1em 0 0.25em 0.25em;
-  /* background-color: yellow; */
 }
 
 .thumbnail-dots {
-  /* background-color: yellowgreen; */
   width: 2em;
 }
 
@@ -259,22 +267,15 @@ input:checked + .slider:before {
   margin-left: 0.5em;
   padding: 0.25em;
   font-weight: bold;
-  /* bottom: 0; */
 }
 
 .thumbnail-img-overlay {
   display: flex;
   flex-direction: column;
-  /* width: 3em; */
   position: absolute;
   top: 0;
   right: 0;
-  /* display: none; */
 }
-
-/* .thumbnail-img-overlay:hover {
-  display: flex;
-} */
 
 .thumbnail-img-overlay > button {
   background-color: black;
@@ -290,4 +291,41 @@ input:checked + .slider:before {
 
 .thumbnail-img {
   position: relative;
+}
+
+.main-vid-description {
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subs,
+.show-more {
+  color: var(--lightest-grey);
+  font-size: 0.9rem;
+}
+
+.show-more {
+  cursor: pointer;
+}
+
+.description-details-container {
+  display: flex;
+  /* background-color: whitesmoke; */
+}
+
+.avatar {
+  margin-right: 1em;
+}
+
+.description-details img {
+  width: 1em;
+  margin-left: 0.25em;
+}
+
+.subscribe-btn {
+  background-color: red;
+  height: 2.5rem;
+  /* font-weight: bold; */
+  /* padding: 1rem; */
 }
